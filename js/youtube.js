@@ -10,15 +10,16 @@
  
  function onYouTubeIframeAPIReady() {
    new YT.Player('player', {
-     videoId: 'H93jvfEnwUA',
+     videoId: 'An6LvWQuj_8',
+     host: 'https://www.youtube.com',
      playerVars : {
        autoplay : true, // 자동 재생 유무
        loop : true, // 박본 재생 유무
-       playlist: 'H93jvfEnwUA' , // loop (반복재생) 사용시 반복 재생할 유튜브 영상 ID 목록을 지정해야한다.
+       playlist: 'An6LvWQuj_8' , // loop (반복재생) 사용시 반복 재생할 유튜브 영상 ID 목록을 지정해야한다.
      },
      events : {
        onReady : function(event){
-        event.target.mute(); // 음소거 
+        event.target.mute(); // 음소거
        }
      } 
    });
