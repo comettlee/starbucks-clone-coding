@@ -1,20 +1,3 @@
-const searchEl = document.querySelector(".search");
-const searchInputEl = searchEl.querySelector("input");
-
-searchEl.addEventListener("click", function () {
-  searchInputEl.focus();
-})
-
-searchInputEl.addEventListener("focus", function () {
-  searchEl.classList.add("focused");
-  searchInputEl.setAttribute("placeholder", "통합검색");
-})
-
-searchInputEl.addEventListener("blur", function () {
-  searchEl.classList.remove("focused");
-  searchInputEl.setAttribute("placeholder", "");
-})
-
 const bageEl = document.querySelector("header .badges");
 const toTopEl = document.querySelector("#to-top");
 
@@ -149,5 +132,3 @@ spyEls.forEach(function (spyEl) {
     .addTo(new ScrollMagic.Controller()); // Scene : 스크롤 매직 특정한 요소를 감시하는 요소를 지정하는 함수
 });
 
-const thisYear = document.querySelector(".this-year");
-thisYear.textContent = new Date().getFullYear();
